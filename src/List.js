@@ -3,19 +3,12 @@ import Cards from './Card.js'
 function List(props){
     return(
         <section className="List">
-        <header className="List-header">
-        {props.children}
-        </header>
-        <div className="List-cards">
-        <Cards>
-        <h3>Hahaha</h3>
-        <p>this is workin</p>
-        </Cards>
-        <Cards>
-          <h3>lahahah</h3>
-          <p>bllssh</p>
-        </Cards>
-        </div>
+          <header className="List-header">
+            {props.header}
+          </header>
+          <div className="List-cards">
+            {props.cards}
+          </div>
         </section>
         
        
