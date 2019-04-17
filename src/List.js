@@ -8,7 +8,7 @@ function List(props){
             {props.header}
           </header>
           <div className="List-cards">
-          {props.cards.map((card)=>
+          {props.cards.map((card) =>
             <Cards key={card.id} title={card.title} content={card.content} />
     )}
             
